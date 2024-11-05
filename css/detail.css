@@ -182,56 +182,23 @@
 .footer {
     margin-top: 100px;
 }
-@media (max-width: 800px) {
-    .cource{
-        width: 930px;
-        max-width: 90%;
-        margin-top: 75px;
-        margin-left: auto;
-        margin-right: auto;
 
-        background-color: #f8f8f8;
-        padding-top: 45px;
-        padding-bottom: 55px;
+@media (max-width: 800px) {
+    .flex-container li {
+        flex-direction: column; /* スマホ表示で文字の下に画像が来るように設定 */
+        align-items: flex-start;
+        text-align: left;
     }
-    .cource h2{
-        font-size: 22px;
-        font-weight: bold;
-        line-height: 30px;
-        padding-left: 30px;
+
+    .flex-container dl {
+        width: 100%; /* テキスト部分の幅を100%に */
     }
-    .cource h2::after {
-        content: '';
-        display: block;
-        width: 36px;
-        height: 3px;
-        background-color: #000000;
-        margin-top: 20px;
-    }
-    .flex-container{
-        display: flex;
-        flex-direction: column;
-        padding-top: 20px;
-        padding-bottom: 40px;
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-    .flex-container dl{
+
+    .flex-container img {
+        width: 100%; /* 画像の幅を100%に調整 */
+        max-width: 260px; /* 画像の最大幅を設定 */
+        margin-top: 15px; /* 文字と画像間のスペース */
         margin-bottom: 20px;
-    }
-    .flex-container dt{
-        font-weight: bold;
-    }
-    .flex-container dd{
-        font-size: 13px;
-        line-height: 20px;
-        margin-top: 10px;
-    }
-    .flex-container li:first-child{
-        margin-left: 0;
-    }
-    .flex-container img{
-        margin-bottom: 20px;
-        width:260px;
+        align-self: center; /* 画像を中央寄せ */
     }
 }
