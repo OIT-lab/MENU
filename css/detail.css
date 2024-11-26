@@ -43,6 +43,26 @@
 
 }
 
+.check{
+    width: 930px;
+    max-width: 90%;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.check img {
+    width: 100%;      /* 親要素に合わせる（横幅を広げる） */
+    max-width: 400px; /* 横幅の最大値 */
+    height: 600px;    /* 縦幅を固定 */
+    object-fit: fill; /* 画像を引き伸ばして全体を表示 */
+    margin-top: 25px;
+    display: block;   /* 中央揃えのための調整 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .map {
     width: 930px;
     max-width: 90%;
@@ -232,6 +252,13 @@
         max-width: 260px; /* 画像の最大幅を設定 */
         margin-top: 15px; /* 文字と画像間のスペース */
         margin-bottom: 20px;
+        align-self: center; /* 画像を中央寄せ */
+    }
+    .check img {
+        width: 100%;    /* 親要素に合わせる */
+        max-width: 200px; /* 画像の最大幅 */
+        height: auto;   /* アスペクト比を維持 */
+        margin-top: 25px;
         align-self: center; /* 画像を中央寄せ */
     }
 }
